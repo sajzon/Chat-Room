@@ -1,14 +1,64 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import java.lang.*?>
-<?import java.util.*?>
-<?import javafx.scene.*?>
-<?import javafx.scene.control.*?>
-<?import javafx.scene.layout.*?>
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXTextArea?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
 
-<AnchorPane xmlns="http://javafx.com/javafx"
-            xmlns:fx="http://javafx.com/fxml"
-            fx:controller="controller.ChatPageController"
-            prefHeight="400.0" prefWidth="600.0">
 
+<AnchorPane prefHeight="754.0" prefWidth="552.0" style="-fx-background-color: #a8a2a2;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.ChatPageController">
+   <children>
+      <ImageView fitHeight="105.0" fitWidth="553.0" layoutX="-1.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../assest/WVT00237-l.jpg" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="139.0" fitWidth="165.0" layoutX="-13.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../assest/146-1468479_my-profile-icon-blank-profile-picture-circle-hd-removebg-preview.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="378.0" text="Live Chat" textFill="#a8a2a2">
+         <font>
+            <Font name="System Bold" size="37.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="91.0" fitWidth="362.0" layoutX="37.0" layoutY="639.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../assest/text-box-png-18.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="54.0" fitWidth="46.0" layoutX="290.0" layoutY="660.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../assest/icons8-camera-100.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="46.0" fitWidth="46.0" layoutX="344.0" layoutY="660.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../assest/icons8-happy-100.png" />
+         </image>
+      </ImageView>
+      <JFXTextField layoutX="49.0" layoutY="668.0" prefHeight="31.0" prefWidth="233.0" unFocusColor="#fff7f7" />
+      <JFXTextArea layoutX="37.0" layoutY="145.0" prefHeight="476.0" prefWidth="489.0" unFocusColor="#a8a2a2" />
+      <Label layoutX="142.0" layoutY="59.0" prefHeight="31.0" prefWidth="147.0" text="Name" textFill="#ebeaea">
+         <font>
+            <Font name="System Bold" size="21.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="61.0" fitWidth="120.0" layoutX="412.0" layoutY="660.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../assest/ba87a6238cbbe8a966e537777553bf28.png" />
+         </image>
+      </ImageView>
+      <JFXButton buttonType="RAISED" layoutX="413.0" layoutY="660.0" prefHeight="46.0" prefWidth="110.0" text=".">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </JFXButton>
+   </children>
 </AnchorPane>

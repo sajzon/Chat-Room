@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.Cursor?>
 <?import javafx.scene.control.TextField?>
 <?import javafx.scene.image.Image?>
 <?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
-
 
 <AnchorPane prefHeight="529.0" prefWidth="541.0" style="-fx-background-color: #9ea1ab;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.LogingPageController">
    <children>
@@ -25,16 +25,20 @@
             <Image url="@../assest/75-756944_medium-image-user-icon-png-white-transparent-png-removebg-preview.png" />
          </image>
       </ImageView>
-      <JFXButton layoutX="400.0" layoutY="436.0" prefHeight="53.0" prefWidth="132.0" />
-      <ImageView fitHeight="73.0" fitWidth="139.0" layoutX="396.0" layoutY="432.0" pickOnBounds="true" preserveRatio="true">
+      <ImageView fitHeight="65.0" fitWidth="131.0" layoutX="396.0" layoutY="432.0" pickOnBounds="true" preserveRatio="true">
          <image>
             <Image url="@../assest/login.png" />
          </image>
       </ImageView>
-      <TextField layoutX="114.0" layoutY="413.0" prefHeight="28.0" prefWidth="262.0" promptText="Name" style="-fx-background-color: #575552;">
+      <TextField fx:id="txtUserName" layoutX="114.0" layoutY="413.0" prefHeight="28.0" prefWidth="262.0" promptText="Name" style="-fx-background-color: #575552;">
          <font>
             <Font size="16.0" />
          </font>
       </TextField>
+      <JFXButton buttonType="RAISED" layoutX="395.0" layoutY="436.0" onAction="#btnLoginOnAction" prefHeight="49.0" prefWidth="131.0" text=".">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </JFXButton>
    </children>
 </AnchorPane>

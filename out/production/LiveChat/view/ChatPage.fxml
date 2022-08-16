@@ -10,8 +10,7 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 
-
-<AnchorPane prefHeight="754.0" prefWidth="552.0" style="-fx-background-color: #a8a2a2;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.ChatPageController">
+<AnchorPane fx:id="ChatPageContext" prefHeight="754.0" prefWidth="552.0" style="-fx-background-color: #a8a2a2;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.ChatPageController">
    <children>
       <ImageView fitHeight="105.0" fitWidth="553.0" layoutX="-1.0" pickOnBounds="true" preserveRatio="true">
          <image>
@@ -43,22 +42,23 @@
             <Image url="@../assest/icons8-happy-100.png" />
          </image>
       </ImageView>
-      <JFXTextField layoutX="49.0" layoutY="668.0" prefHeight="31.0" prefWidth="233.0" unFocusColor="#fff7f7" />
-      <JFXTextArea layoutX="37.0" layoutY="145.0" prefHeight="476.0" prefWidth="489.0" unFocusColor="#a8a2a2" />
-      <Label layoutX="142.0" layoutY="59.0" prefHeight="31.0" prefWidth="147.0" text="Name" textFill="#ebeaea">
-         <font>
-            <Font name="System Bold" size="21.0" />
-         </font>
-      </Label>
+
       <ImageView fitHeight="61.0" fitWidth="120.0" layoutX="412.0" layoutY="660.0" pickOnBounds="true" preserveRatio="true">
          <image>
             <Image url="@../assest/ba87a6238cbbe8a966e537777553bf28.png" />
          </image>
       </ImageView>
-      <JFXButton buttonType="RAISED" layoutX="413.0" layoutY="660.0" prefHeight="46.0" prefWidth="110.0" text=".">
+      <JFXButton buttonType="RAISED" layoutX="413.0" layoutY="660.0" onAction="#btnSendOnAction" prefHeight="46.0" prefWidth="110.0" text=".">
          <cursor>
             <Cursor fx:constant="HAND" />
          </cursor>
       </JFXButton>
+      <JFXTextField fx:id="txtMessage" layoutX="49.0" layoutY="668.0" prefHeight="31.0" prefWidth="233.0" unFocusColor="#a49b9b" />
+      <JFXTextArea fx:id="txtAreaAllText" focusColor="#b0b1b5" layoutX="42.0" layoutY="161.0" prefHeight="454.0" prefWidth="475.0" unFocusColor="#a19a9a" />
+      <Label fx:id="lblName" layoutX="145.0" layoutY="62.0" prefHeight="21.0" prefWidth="160.0" text="Name" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="24.0" />
+         </font>
+      </Label>
    </children>
 </AnchorPane>
